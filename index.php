@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -13,11 +12,11 @@
         <h2>Embaralhador</h2>
         <form action="/resultado.php" method="POST" >
             <div class="inputBox">
-                <input type="number" name="numeroAlunos" id="numeroAlunos" min="0" max="2097152" required>
+                <input type="number" name="numeroAlunos" id="numeroAlunos" min="1" max="2097152" required>
                 <label>Alunos<label>
             </div>
             <div class="inputBox">
-                <input type="number" name="numeroEquipes" id="numeroEquipes" min="0" max="2097152" required>
+                <input type="number" name="numeroEquipes" id="numeroEquipes" min="1" max="2097152" required>
                 <label>Equipes</label>
             </div>
             <div class="inputBox">

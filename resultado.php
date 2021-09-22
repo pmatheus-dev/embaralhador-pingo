@@ -13,7 +13,7 @@ if(isset($_POST)){
 
     $equipes = range(1, $numeroEquipes);
     $alunos = range(1, $numeroAlunos);
-    shuffle($alunos);
+    // shuffle($alunos);
 
     $resto = $numeroAlunos % $numeroEquipes;
     $alunosPorEquipe = intval($numeroAlunos / $numeroEquipes);
@@ -42,7 +42,7 @@ if(isset($_POST)){
             echo "<div class='box'>Equipe ".($i + 1)."<br>";
             $array = array_slice($alunos, $alunosPorEquipe * $i, $alunosPorEquipe);
             foreach ($array as $key => $a){
-                if ($key == count($array) - 1 AND $i > count($sobraram)){
+                if ($key == count($array) - 1 AND $i >= $numeroEquipes - 1){
                     echo $a;
                 }
                 else{
