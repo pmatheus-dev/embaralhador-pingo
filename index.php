@@ -11,7 +11,7 @@
 <body>
     <div class="box">
         <h2>Embaralhador</h2>
-        <form action="/embaralhador/resultado.php" method="POST" >
+        <form action="/resultado.php" method="POST" >
             <div class="inputBox">
                 <input type="number" name="numeroAlunos" id="numeroAlunos" min="0" max="2097152" required>
                 <label>Alunos<label>

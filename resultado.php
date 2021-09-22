@@ -68,7 +68,6 @@ if(isset($_POST)){
     <link rel="stylesheet" href="./css/styleResultado.css">
 </head>
 <body>
-
     <div style="text-align:center">
         <button onclick="window.location='./'">Voltar</button>
         <button onclick="salvar()">Salvar no WhatsApp</button>
