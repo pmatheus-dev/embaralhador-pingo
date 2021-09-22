@@ -1,0 +1,31 @@
+body {
+    background: url(https://oauthaluno.seduc.ce.gov.br/public/images/login-bg.jpg);
+    color: #fff;
+    font-family: sans-serif;
+    
+}
+
+.box{
+    background-color:rgba(0, 0, 0, 0.65);
+    box-sizing: border-box;
+    /* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); */
+    border-radius: 15px;
+    border: 1.5px solid #ff8400;
+
+    margin: 10px auto 10px auto;
+    width: 95%;
+    padding: 10px;
+}
+button{
+    position: relative;
+    background: transparent;
+    border:none;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    background-color: #ff8400;
+    padding: 9px 13px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
