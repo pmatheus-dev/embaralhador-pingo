@@ -13,7 +13,7 @@ if(isset($_POST)){
 
     $equipes = range(1, $numeroEquipes);
     $alunos = range(1, $numeroAlunos);
-    // shuffle($alunos);
+    shuffle($alunos);
 
     $resto = $numeroAlunos % $numeroEquipes;
     $alunosPorEquipe = intval($numeroAlunos / $numeroEquipes);
