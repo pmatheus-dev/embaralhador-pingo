@@ -1,12 +1,12 @@
 <?php
 date_default_timezone_set('America/Sao_Paulo');
 if(isset($_POST)){
-    $numeroAlunos = $_POST['numeroAlunos'];
-    $numeroEquipes = $_POST['numeroEquipes'];
-    $disciplina = $_POST['disciplina'];
-    $conteudo = $_POST['conteudo'];
-    $turma = $_POST['turma'];
-    $descricao = $_POST['descricao'];
+    $numeroAlunos = filter_input(INPUT_POST, 'numeroAlunos',FILTER_SANITIZE_NUMBER_INT);
+    $numeroEquipes = filter_input(INPUT_POST, 'numeroEquipes',FILTER_SANITIZE_NUMBER_INT);
+    $disciplina = filter_input(INPUT_POST, 'disciplina',FILTER_SANITIZE_SPECIAL_CHARS);
+    $conteudo = filter_input(INPUT_POST, 'conteudo',FILTER_SANITIZE_SPECIAL_CHARS);
+    $turma = filter_input(INPUT_POST, 'turma',FILTER_SANITIZE_SPECIAL_CHARS);
+    $descricao = filter_input(INPUT_POST, 'descricao',FILTER_SANITIZE_SPECIAL_CHARS);
     $data = date("d/m/Y")." às ".date("H:i");
 
     echo "<div class='box'>Sorteio realizado no dia $data<br><br>Disciplina: $disciplina <br>Conteúdo: $conteudo<br>Turma: $turma<br>Descrição: $descricao<br></div>";
