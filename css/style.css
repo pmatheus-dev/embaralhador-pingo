@@ -2,9 +2,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: url(https://oauthaluno.seduc.ce.gov.br/public/images/login-bg.jpg);
-    
-    color: #fff;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 122);
 }
 .box{
     position: absolute;
@@ -13,11 +12,11 @@ body{
     transform: translate(-50%, -50%);
     width: 400px;
     padding: 40px;
-    background-color:rgba(0, 0, 0, 0.65);
+    background-color:rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border-radius: 15px;
-    border: 1.5px solid #ff8400;
+    border: 1.5px solid rgb(0, 0, 122);
 }
 
 .box h2{
@@ -37,10 +36,10 @@ body{
     letter-spacing: 1px;
     margin-bottom: 30px;
     border: none;
-    border-bottom: 1px solid #ff8400;
+    border-bottom: 1px solid rgb(0, 0, 122);
     outline: none;
     background-color: transparent;
-    color: #fff;
+    color: rgb(0, 0, 122);
 }
 
 .box .inputBox label{
@@ -51,14 +50,14 @@ body{
     font-size: 15px;
     pointer-events: none;
     transition: 0.5s;
-    color: #fff;
+    color: rgb(0, 0, 122);
     left: -5px;
 }
 .box .inputBox input:focus ~ label,
 .box .inputBox input:valid ~ label{
     top: -29px;
     left: -9px;
-    color: #ff8400;
+    color: rgb(0, 0, 122);
     font-size: 16px;
 }
 
@@ -68,9 +67,10 @@ body{
     border:none;
     outline: none;
     color: #fff;
-    background-color: #5baf0d;
+    background-color: blue;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     left: 31%;
 }
+
