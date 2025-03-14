@@ -50,8 +50,13 @@ if(isset($_POST)){
                 }
 
             }
-            echo $sobraram[0]."</div>";
-            $pop = array_shift($sobraram);
+            if (count($sobraram) != 0){
+                echo $sobraram[0]."</div>";
+                $pop = array_shift($sobraram);
+            }else{
+                echo "</div>";
+            }
+            
         }
     }
 }
